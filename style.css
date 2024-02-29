@@ -349,7 +349,7 @@ main {
 }
 .Block2_SomeInfo_PricesAndOffers {
   display: grid;
-  grid-template-columns: 49.1% 48.2%;
+  grid-template-columns: 49.1% 49%;
   grid-template-rows: 155px;
   grid-column-gap: 10px;
 }
