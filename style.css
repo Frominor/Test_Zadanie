@@ -8,6 +8,7 @@
   --yellow-background-color: #fff48e;
 }
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
@@ -375,6 +376,9 @@ main {
 .ModalWindow_Content {
   width: 500px;
   margin: 15% auto;
+  pointer-events: none;
+  position: relative;
+  z-index: 300;
   height: 452px;
   background: #fff;
   opacity: 1;
