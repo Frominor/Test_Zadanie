@@ -1,0 +1,42 @@
+@media (width< 480px) {
+  .BlocK1_Gift_Box {
+    grid-row: 2;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 155px;
+    grid-column-gap: 10px;
+  }
+  .Block1_Price_Info {
+    grid-template-rows: 48% 48%;
+
+    grid-template-columns: 98.3%;
+  }
+  .Block1_Intructions_Box {
+    grid-row: 3;
+    grid-template-rows: 211px;
+  }
+  .Block1_Intructions {
+    overflow-y: scroll;
+  }
+  .Block1_ElectroBox_And_Gift_Box_Item {
+    grid-template-columns: 100%;
+    row-gap: 10px;
+  }
+  .Block2_Box {
+    display: none;
+  }
+  .Block1 {
+    grid-row-gap: 5px;
+  }
+  .Block2_More_Info_Box {
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
+  }
+  .Block2_More_Info_Box_Items {
+    grid-row: 2;
+    grid-template-rows: 155px;
+    grid-template-columns: 49% 48.3%;
+  }
+  .Block1_Electro_Box_Items {
+    grid-template-columns: 48.6% 48.65%;
+  }
+}

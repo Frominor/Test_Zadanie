@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --darkbkcolor: #323c46;
+  --background-grey: #71787f;
+  --white-text-color: #fff;
+  --lightgraybackground: #f1f2f2;
+  --yellow-background-color: #fff48e;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -17,7 +24,7 @@ body {
   position: relative;
 }
 header {
-  background-color: #323c46;
+  background-color: var(--darkbkcolor);
   height: 90px;
   display: flex;
   color: white;
@@ -29,7 +36,7 @@ h1 {
   font-weight: 500;
 }
 main {
-  background: #fff;
+  background: var(--white-text-color);
 }
 .container {
   padding-top: 10px;
@@ -38,15 +45,24 @@ main {
 }
 .Block1 {
   display: grid;
-  grid-template-columns: 492px 241px;
+  grid-template-columns: 100%;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
-.Block1_Intructions {
-  background: #71787f;
-  color: white;
+.Block1_Intructions_Box {
+  display: grid;
+  grid-template-columns: 66% 32.5%;
+  grid-column-gap: 10px;
 }
-
+.Block1_Intructions {
+  background: var(--background-grey);
+  color: var(--white-text-color);
+}
+.Block1_ElectroBox_And_Gift_Box_Item {
+  display: grid;
+  grid-template-columns: 66% 32.5%;
+  column-gap: 10px;
+}
 .Block1_Intructions > p {
   padding-top: 30px;
   font-family: Open Sans;
@@ -71,7 +87,7 @@ main {
   line-height: 20px;
 }
 .Block1_Price_Info > div {
-  background: #71787f;
+  background: var(--background-grey);
   display: flex;
   align-items: flex-end;
 }
@@ -90,44 +106,41 @@ main {
 }
 .Block1_Electro_Box_Items {
   display: grid;
-  grid-template-columns: 240px 240px;
+  grid-template-columns: 49% 49%;
   grid-template-rows: 155px 155px;
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
-  text-align: left;
 
-  grid-row-gap: 10px;
   grid-column-gap: 10px;
 }
 
 .Block1_Electro_Box_Items > div {
-  background: #f1f2f2;
+  background: var(--lightgraybackground);
   display: flex;
   align-items: flex-end;
 }
 
 .Block1_Electro_Box_Item {
   display: grid;
-  grid-template-columns: 491px;
+  grid-template-columns: 100%;
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .Block1_Electro_Box_Item > div {
-  background: #f1f2f2;
+  background: var(--lightgraybackground);
   display: flex;
   align-items: flex-end;
 }
 .BlocK1_Gift_Box {
   display: grid;
-  grid-template-columns: 242px;
+  grid-template-columns: 100%;
   grid-template-rows: 155px 155px;
   grid-row-gap: 10px;
 }
@@ -159,11 +172,16 @@ main {
   padding-bottom: 10px;
   display: grid;
   grid-row-gap: 10px;
-  grid-template-columns: 241px 492px;
+  grid-template-columns: 100%;
+  grid-column-gap: 10px;
+}
+.Block2_Box {
+  display: grid;
+  grid-template-columns: 32.5% 66%;
   grid-column-gap: 10px;
 }
 .Block2_TimeToWash {
-  color: white;
+  color: var(--white-text-color);
   position: relative;
 }
 
@@ -181,7 +199,7 @@ main {
   justify-content: center;
   pointer-events: none;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--white-text-color);
   width: 61px;
   height: 61px;
   left: 40%;
@@ -217,7 +235,7 @@ main {
 
 .Block1_Price_Info > div > p {
   padding: 15px;
-  color: white;
+  color: var(--white-text-color);
 }
 .Block2_Moderniz {
   font-family: Open Sans;
@@ -259,7 +277,7 @@ main {
   font-weight: 400;
   font-size: 14px;
   padding: 0px;
-  color: #000000;
+  color: black;
   line-height: 19.6px;
 }
 .underline {
@@ -276,7 +294,8 @@ main {
   align-items: flex-end;
   justify-content: space-between;
   padding-bottom: 4px;
-  width: 392px;
+  width: 97.4%;
+  height: 26px;
 }
 .Block2_Items {
   padding: 50px 50px 0px 50px;
@@ -301,11 +320,16 @@ main {
 .Block2_SomeInfo_BeFirst,
 .Block2_SomeInfo_PricesAndOffers_SuperPrice,
 .Block2_SomeInfo_NicePrice {
-  background: #fff48e;
+  background: var(--yellow-background-color);
 }
 .Block2_More_Info_Box {
   display: grid;
-  grid-template-columns: 241px;
+  grid-template-columns: 32.4% 66%;
+  grid-column-gap: 10px;
+}
+.Block2_More_Info_Box_Items {
+  display: grid;
+  grid-template-columns: 100%;
   grid-template-rows: 155px 155px;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
@@ -318,14 +342,14 @@ main {
 }
 .Block2_SomeInfo {
   display: grid;
-  grid-template-columns: 492px;
+  grid-template-columns: 100%;
   grid-template-rows: 155px;
 
   grid-row-gap: 10px;
 }
 .Block2_SomeInfo_PricesAndOffers {
   display: grid;
-  grid-template-columns: 241px 241px;
+  grid-template-columns: 49.1% 48.2%;
   grid-template-rows: 155px;
   grid-column-gap: 10px;
 }
@@ -381,10 +405,10 @@ main {
 }
 
 footer {
-  background-color: #323c46;
+  background-color: var(--darkbkcolor);
   height: 90px;
   display: flex;
-  color: white;
+  color: var(--white-text-color);
   align-items: center;
   justify-content: center;
   font-family: Open Sans;
